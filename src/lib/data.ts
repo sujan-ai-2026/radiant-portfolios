@@ -77,6 +77,18 @@ export const projects: Project[] = [
     githubUrl: "",
     featured: true,
   },
+  {
+    id: "skycast-ai",
+    title: "Aura: Your Weather Concierge",
+    description: "Real-time weather application with intelligent AI-powered lifestyle and activity suggestions.",
+    longDescription: "Aura is a modern weather platform that goes beyond simple forecasts by providing personalized, AI-driven lifestyle recommendations. By integrating real-time weather data with the Groq API, the application analyzes atmospheric conditions to suggest optimal activities, clothing choices, and health tips. Whether it's recommending a perfect time for a run or suggesting indoor creative projects during a storm, Aura transforms raw data into actionable daily insights.\n\nCore Tech Stack\n- Frontend Framework: React 18 with TypeScript\n- Build Tooling: Vite for lightning-fast development and optimized production builds\n- Weather Integration: Real-time Weather API (via npm) for precise, up-to-the-minute atmospheric data\n- AI Intelligence: Groq API for generating context-aware lifestyle and health suggestions\n- Styling & UI: Tailwind CSS and shadcn/ui for a clean, responsive, and accessible interface",
+    image: "/sun.png",
+    tags: ["React", "Vite", "Groq API", "Weather API", "Tailwind CSS", "TypeScript"],
+    category: "AI / Utility",
+    liveUrl: "https://sujanai-weather-companion.netlify.app/",
+    githubUrl: "",
+    featured: true,
+  },
 ];
 
 export const experiences: Experience[] = [
