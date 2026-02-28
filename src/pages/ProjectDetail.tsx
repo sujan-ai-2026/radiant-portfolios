@@ -35,9 +35,16 @@ export default function ProjectDetail() {
               Back to projects
             </Link>
 
-            <div className="h-1 w-16 rounded-full bg-gradient-primary mb-6" />
-
-            <h1 className="text-4xl font-display font-bold mb-4">{project.title}</h1>
+            <div className="flex items-center gap-4 mb-4">
+              {project.image && (
+                <img
+                  src={project.image}
+                  alt=""
+                  className="w-10 h-10 object-contain"
+                />
+              )}
+              <h1 className="text-4xl font-display font-bold">{project.title}</h1>
+            </div>
             <p className="text-primary dark:text-accent text-sm font-mono mb-4">{project.category}</p>
 
             <div className="flex flex-wrap gap-2 mb-8">

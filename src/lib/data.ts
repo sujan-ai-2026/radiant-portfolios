@@ -54,7 +54,7 @@ export const personalInfo = {
   name: "Sujan Praba",
   title: "Full-Stack Developer",
   tagline: "I craft digital experiences that blend beautiful design with robust engineering.",
-  bio: "I'm a passionate full-stack developer with 5+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
+  bio: "I'm a passionate full-stack developer with 4+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
   email: "sujanpraba@gmail.com",
   location: "Coimbatore, India",
   socials: {
@@ -66,76 +66,16 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
-    id: "pulse-analytics",
-    title: "Pulse Analytics",
-    description: "Real-time analytics dashboard with interactive charts and AI-powered insights.",
-    longDescription: "A comprehensive analytics platform that provides real-time data visualization, custom dashboards, and AI-powered insights. Built with React, D3.js, and a Go backend for high-performance data processing.",
-    image: "",
-    tags: ["React", "TypeScript", "D3.js", "Go", "PostgreSQL"],
-    category: "Full-Stack",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    id: "ai-quiz-master",
+    title: "AI Quiz Master",
+    description: "Intelligent quiz generation platform that transforms any topic or job description into a high-quality, tailored assessment.",
+    longDescription: "AI Quiz Master is an intelligent quiz generation platform that transforms any topic or job description into a high-quality, tailored assessment. By leveraging advanced Language Models (LLMs) via the Groq API, the application dynamically creates multiple-choice questions that range from basic concepts to expert-level scenarios. The platform provides a seamless user experience with real-time scoring, detailed performance breakdowns, and AI-generated summaries that offer actionable feedback and career advice.\n\nCore Tech Stack\n- Frontend Framework: React 18 with TypeScript\n- Build Tooling: Vite for ultra-fast development and optimized production builds\n- Styling & UI: Tailwind CSS for utility-first styling and shadcn/ui (built on Radix UI) for premium, accessible components\n- State Management: TanStack Query (React Query) for efficient data fetching and caching\n- AI Integration: Groq API for high-speed, LLM-powered question and summary generation\n- Form Handling: React Hook Form with Zod for robust schema validation\n- Icons: Lucide React for consistent, scalable iconography",
+    image: "/chatbot.png",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "TanStack Query", "Groq API", "Zod", "Lucide React"],
+    category: "AI / Full-Stack",
+    liveUrl: "https://sujanai-quiz-generator.netlify.app/",
+    githubUrl: "",
     featured: true,
-  },
-  {
-    id: "nebula-ui",
-    title: "Nebula UI",
-    description: "A modern component library with 50+ accessible components and design tokens.",
-    longDescription: "An open-source component library featuring 50+ fully accessible React components with a flexible design token system. Includes dark mode, RTL support, and comprehensive documentation.",
-    image: "",
-    tags: ["React", "Storybook", "CSS-in-JS", "A11y"],
-    category: "Frontend",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    featured: true,
-  },
-  {
-    id: "sync-flow",
-    title: "SyncFlow",
-    description: "Real-time collaboration platform with video, whiteboard, and document editing.",
-    longDescription: "A collaboration platform enabling teams to work together in real-time with video conferencing, shared whiteboards, and collaborative document editing powered by CRDTs.",
-    image: "",
-    tags: ["Next.js", "WebRTC", "WebSocket", "Redis"],
-    category: "Full-Stack",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    featured: true,
-  },
-  {
-    id: "terra-map",
-    title: "TerraMap",
-    description: "Interactive geospatial visualization tool for environmental data.",
-    longDescription: "An interactive mapping application that visualizes environmental datasets including climate data, biodiversity hotspots, and pollution levels using Mapbox GL and custom WebGL shaders.",
-    image: "",
-    tags: ["Mapbox", "WebGL", "Python", "FastAPI"],
-    category: "Data Viz",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    featured: false,
-  },
-  {
-    id: "code-forge",
-    title: "CodeForge",
-    description: "AI-powered code review tool that catches bugs before they ship.",
-    longDescription: "An intelligent code review assistant that uses machine learning to detect potential bugs, security vulnerabilities, and code quality issues before code reaches production.",
-    image: "",
-    tags: ["Python", "ML", "React", "Docker"],
-    category: "AI/ML",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    featured: false,
-  },
-  {
-    id: "wave-audio",
-    title: "WaveAudio",
-    description: "Browser-based DAW with real-time audio processing and MIDI support.",
-    longDescription: "A web-based digital audio workstation featuring real-time audio processing, MIDI device support, virtual instruments, and collaborative session sharing.",
-    image: "",
-    tags: ["Web Audio API", "React", "WebAssembly", "Rust"],
-    category: "Creative",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    featured: false,
   },
 ];
 
@@ -158,23 +98,6 @@ export const experiences: Experience[] = [
     description: "Started from scratch by learning HTML, CSS, and JavaScript, then progressed to building real-world features using React and Next.js. Contributed to frontend development, improved UI components, and gained hands-on experience working on a SaaS platform.",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"]
   }
-
-  // {
-  //   id: "3",
-  //   role: "Frontend Developer",
-  //   company: "DigitalAgency",
-  //   period: "2019 — 2020",
-  //   description: "Developed responsive web applications for Fortune 500 clients. Specialized in performance optimization and accessibility compliance.",
-  //   technologies: ["Vue.js", "SCSS", "WordPress", "PHP"],
-  // },
-  // {
-  //   id: "4",
-  //   role: "Junior Developer",
-  //   company: "WebStudio",
-  //   period: "2018 — 2019",
-  //   description: "Started my professional journey building landing pages and e-commerce solutions. Learned agile methodologies and collaborative development.",
-  //   technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
-  // },
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -240,9 +163,6 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "TypeScript", level: 95 },
       { name: "JavaScript", level: 95 },
-      { name: "Python", level: 50 },
-      // { name: "Go", level: 65 },
-      // { name: "Rust", level: 50 },
     ],
   },
   {
@@ -256,11 +176,18 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    title: "AI & Agents",
+    skills: [
+      { name: "Prompt Engineering", level: 90 },
+      { name: "Claude & LLMs", level: 92 },
+      { name: "AI Agents (Antigravity)", level: 85 },
+      { name: "Agentic Workflows", level: 88 },
+    ],
+  },
+  {
     title: "Tools & Platforms",
     skills: [
       { name: "Git", level: 90 },
-      // { name: "Docker", level: 80 },
-      // { name: "AWS", level: 75 },
       { name: "PostgreSQL", level: 85 },
       { name: "Figma", level: 80 },
     ],

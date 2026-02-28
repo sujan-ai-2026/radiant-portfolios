@@ -50,8 +50,8 @@ export default function About() {
               </div>
               <div className="grid grid-cols-2 gap-3 w-full text-center">
                 {[
-                  { label: "Years Exp", value: "5+" },
-                  { label: "Projects", value: "30+" },
+                  { label: "Years Exp", value: "4+" },
+                  { label: "Projects", value: "15+" },
                 ].map((stat) => (
                   <div key={stat.label} className="p-3 rounded-lg bg-card border border-border">
                     <p className="text-xl font-bold text-gradient">{stat.value}</p>

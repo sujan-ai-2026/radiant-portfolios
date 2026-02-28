@@ -39,8 +39,8 @@ export default function Projects() {
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${activeCategory === cat
-                  ? "bg-gradient-primary text-primary-foreground glow-sm"
-                  : "bg-card border border-border text-muted-foreground hover:text-foreground hover:border-primary/50"
+                ? "bg-gradient-primary text-primary-foreground glow-sm"
+                : "bg-card border border-border text-muted-foreground hover:text-foreground hover:border-primary/50"
                 }`}
             >
               {cat}
@@ -58,52 +58,61 @@ export default function Projects() {
               transition={{ delay: idx * 0.1 + 0.3, duration: 0.5 }}
               layout
             >
-              <Link
-                to={`/projects/${project.id}`}
-                className="group block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:glow-sm h-full"
-              >
-                {/* Colored bar */}
-                <div className="h-1 w-12 rounded-full bg-gradient-primary mb-5 group-hover:w-20 transition-all duration-300" />
+              <div className="group relative rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:glow-sm h-full flex flex-col">
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="block p-6 flex-grow"
+                >
+                  {/* Colored bar */}
+                  <div className="h-1 w-12 rounded-full bg-gradient-primary mb-5 group-hover:w-20 transition-all duration-300" />
 
-                <h4 className="text-xl font-display font-semibold mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h4>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.description}</p>
+                  <div className="flex items-center gap-2 mb-2">
+                    {project.image && (
+                      <img
+                        src={project.image}
+                        alt=""
+                        className="w-6 h-6 object-contain"
+                      />
+                    )}
+                    <h4 className="text-xl font-display font-semibold group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h4>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{project.description}</p>
 
-                <div className="flex flex-wrap gap-2 mb-5">
-                  {project.tags.slice(0, 3).map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-0.5 text-xs rounded-md bg-primary/10 text-primary dark:text-accent font-mono"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.slice(0, 3).map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2 py-0.5 text-xs rounded-md bg-primary/10 text-primary dark:text-accent font-mono"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </Link>
 
-                <div className="flex items-center gap-3 text-muted-foreground">
+                <div className="px-6 pb-6 flex items-center gap-3 text-muted-foreground mt-auto">
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
                     className="hover:text-primary transition-colors"
                     aria-label="Live demo"
                   >
                     <ExternalLink className="w-4 h-4" />
                   </a>
-                  <a
+                  {/* <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={(e) => e.stopPropagation()}
                     className="hover:text-primary transition-colors"
                     aria-label="GitHub"
                   >
                     <Github className="w-4 h-4" />
-                  </a>
+                  </a> */}
                 </div>
-              </Link>
+              </div>
             </motion.div>
           ))}
         </div>
