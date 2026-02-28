@@ -17,7 +17,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/radiant-portfolios">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/projects/:id" element={<ProjectDetail />} />
