@@ -38,11 +38,10 @@ export default function Projects() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
-                activeCategory === cat
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${activeCategory === cat
                   ? "bg-gradient-primary text-primary-foreground glow-sm"
                   : "bg-card border border-border text-muted-foreground hover:text-foreground hover:border-primary/50"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -75,7 +74,7 @@ export default function Projects() {
                   {project.tags.slice(0, 3).map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-0.5 text-xs rounded-md bg-muted text-accent font-mono"
+                      className="px-2 py-0.5 text-xs rounded-md bg-primary/10 text-primary dark:text-accent font-mono"
                     >
                       {tag}
                     </span>

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { navLinks, personalInfo } from "@/lib/data";
 import { Menu, X, Download } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -50,9 +51,8 @@ export default function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass" : "bg-transparent"
+        }`}
     >
       <nav className="container mx-auto px-6 h-16 flex items-center justify-between">
         <a href="/" className="font-display font-bold text-lg text-gradient">
@@ -65,33 +65,36 @@ export default function Navbar() {
             <button
               key={link.href}
               onClick={() => handleNavClick(link.href)}
-              className={`text-sm transition-colors ${
-                activeSection === link.href
-                  ? "text-primary font-medium"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
+              className={`text-sm transition-colors ${activeSection === link.href
+                ? "text-primary font-medium"
+                : "text-muted-foreground hover:text-foreground"
+                }`}
             >
               {link.label}
             </button>
           ))}
-          <a
+          {/* <a
             href="/cv.pdf"
             download
             className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
           >
             <Download className="w-3.5 h-3.5" />
             CV
-          </a>
+          </a> */}
+          <ThemeToggle />
         </div>
 
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden text-foreground p-2"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
+        {/* Mobile toggle & theme */}
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
+          <button
+            className="text-foreground p-2"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
@@ -108,9 +111,8 @@ export default function Navbar() {
                 <button
                   key={link.href}
                   onClick={() => handleNavClick(link.href)}
-                  className={`text-left text-sm py-1 ${
-                    activeSection === link.href ? "text-primary" : "text-muted-foreground"
-                  }`}
+                  className={`text-left text-sm py-1 ${activeSection === link.href ? "text-primary" : "text-muted-foreground"
+                    }`}
                 >
                   {link.label}
                 </button>

@@ -6,52 +6,104 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 210 40% 98%;
+    --foreground: 217 33% 17%;
 
-    --card: 217 33% 17%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 217 33% 17%;
 
-    --popover: 217 33% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 33% 17%;
 
-    --primary: 263 84% 58%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 22%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 217 33% 17%;
 
-    --muted: 217 33% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 19% 35%;
 
-    --accent: 263 86% 76%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 252 95% 85%;
+    --accent-foreground: 217 33% 17%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 33% 25%;
-    --input: 217 33% 25%;
-    --ring: 263 84% 58%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 262 83% 58%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 222 47% 11%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 263 84% 58%;
-    --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 217 33% 17%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 33% 25%;
-    --sidebar-ring: 263 84% 58%;
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 217 33% 17%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 32% 91%;
+    --sidebar-accent-foreground: 217 33% 17%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 262 83% 58%;
 
-    /* Custom tokens */
-    --glow: 263 84% 58%;
-    --glow-light: 263 86% 76%;
-    --surface: 217 33% 14%;
+    /* Custom tokens for Light Mode */
+    --glow: 262 83% 58%;
+    --glow-light: 252 95% 85%;
+    --button-hover: 263 70% 50%;
+    --surface: 0 0% 100%;
+    --surface-hover: 214 32% 91%;
+    --gradient-start: 262 83% 58%;
+    --gradient-end: 252 95% 85%;
+    --text-primary: 217 33% 17%;
+    --text-secondary: 215 19% 35%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 96%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 22%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 217 33% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 255 92% 76%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 96%;
+
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 262 83% 58%;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 215 25% 27%;
+    --sidebar-ring: 262 83% 58%;
+
+    /* Custom tokens for Dark Mode */
+    --glow: 262 83% 58%;
+    --glow-light: 255 92% 76%;
+    --button-hover: 263 70% 50%;
+    --surface: 217 33% 17%;
     --surface-hover: 217 33% 20%;
-    --gradient-start: 263 84% 58%;
-    --gradient-end: 263 86% 76%;
+    --gradient-start: 262 83% 58%;
+    --gradient-end: 255 92% 76%;
+    --text-primary: 210 40% 96%;
     --text-secondary: 215 20% 65%;
   }
 }
@@ -66,11 +118,17 @@
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Space Grotesk', sans-serif;
   }
 
-  code, pre {
+  code,
+  pre {
     font-family: 'JetBrains Mono', monospace;
   }
 }

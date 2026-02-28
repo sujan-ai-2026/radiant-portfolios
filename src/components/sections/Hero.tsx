@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Twitter } from "lucide-react";
 import { personalInfo } from "@/lib/data";
-import { lazy, Suspense } from "react";
-
-const ThreeScene = lazy(() => import("@/components/ThreeScene"));
+import { HeroBackground } from "@/components/HeroBackground";
 
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <Suspense fallback={null}>
-        <ThreeScene />
-      </Suspense>
+      <HeroBackground />
 
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background z-[1]" />
@@ -26,7 +22,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-accent font-mono text-sm tracking-widest uppercase"
+            className="text-primary dark:text-accent font-mono text-sm tracking-widest uppercase"
           >
             Hello, I'm
           </motion.p>

@@ -38,11 +38,11 @@ export default function ProjectDetail() {
             <div className="h-1 w-16 rounded-full bg-gradient-primary mb-6" />
 
             <h1 className="text-4xl font-display font-bold mb-4">{project.title}</h1>
-            <p className="text-accent text-sm font-mono mb-4">{project.category}</p>
+            <p className="text-primary dark:text-accent text-sm font-mono mb-4">{project.category}</p>
 
             <div className="flex flex-wrap gap-2 mb-8">
               {project.tags.map((tag) => (
-                <span key={tag} className="px-3 py-1 text-xs rounded-full bg-muted text-accent font-mono">
+                <span key={tag} className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary dark:text-accent font-mono">
                   {tag}
                 </span>
               ))}

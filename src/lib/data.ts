@@ -51,12 +51,12 @@ export interface SkillCategory {
 }
 
 export const personalInfo = {
-  name: "Alex Rivera",
+  name: "Sujan Praba",
   title: "Full-Stack Developer",
   tagline: "I craft digital experiences that blend beautiful design with robust engineering.",
   bio: "I'm a passionate full-stack developer with 5+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
-  email: "hello@alexrivera.dev",
-  location: "San Francisco, CA",
+  email: "sujanpraba@gmail.com",
+  location: "Coimbatore, India",
   socials: {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
@@ -140,38 +140,41 @@ export const projects: Project[] = [
 ];
 
 export const experiences: Experience[] = [
+
   {
     id: "1",
-    role: "Senior Frontend Engineer",
-    company: "TechCorp",
-    period: "2022 — Present",
-    description: "Leading the frontend architecture for a SaaS platform serving 100K+ users. Implemented design system, improved Core Web Vitals by 40%, and mentored junior developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+    role: "Full-Stack Developer",
+    company: "Pirai Infotech Pvt Ltd",
+    period: "2023 — Present",
+    description: "Contributing as a Full-Stack Developer across multiple production-grade platforms including E-Ticket Booking, Doctor Appointment Management, Insurance & Investment, and Job Search & Posting systems. Built scalable frontend and backend features using React, Next.js, and Node.js. Adopted TypeScript for type-safe development, implemented unit testing, and improved application performance and maintainability. Actively worked with modern tooling and state management solutions to enhance user experience and system reliability.",
+    technologies: ["Next.js", "React", "TypeScript", "Node.js", "TanStack Query", "Vite", "AWS", "Docker", "Unit Testing"]
   },
+
   {
     id: "2",
-    role: "Full-Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 — 2022",
-    description: "Built and shipped multiple products from concept to launch. Led the migration from a monolith to microservices architecture, reducing deploy times by 60%.",
-    technologies: ["Node.js", "React", "AWS", "Docker"],
-  },
-  {
-    id: "3",
-    role: "Frontend Developer",
-    company: "DigitalAgency",
-    period: "2019 — 2020",
-    description: "Developed responsive web applications for Fortune 500 clients. Specialized in performance optimization and accessibility compliance.",
-    technologies: ["Vue.js", "SCSS", "WordPress", "PHP"],
-  },
-  {
-    id: "4",
-    role: "Junior Developer",
-    company: "WebStudio",
-    period: "2018 — 2019",
-    description: "Started my professional journey building landing pages and e-commerce solutions. Learned agile methodologies and collaborative development.",
-    technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
-  },
+    role: "Intern Developer",
+    company: "Pirai Infotech Pvt Ltd",
+    period: "2023 (6 months)",
+    description: "Started from scratch by learning HTML, CSS, and JavaScript, then progressed to building real-world features using React and Next.js. Contributed to frontend development, improved UI components, and gained hands-on experience working on a SaaS platform.",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"]
+  }
+
+  // {
+  //   id: "3",
+  //   role: "Frontend Developer",
+  //   company: "DigitalAgency",
+  //   period: "2019 — 2020",
+  //   description: "Developed responsive web applications for Fortune 500 clients. Specialized in performance optimization and accessibility compliance.",
+  //   technologies: ["Vue.js", "SCSS", "WordPress", "PHP"],
+  // },
+  // {
+  //   id: "4",
+  //   role: "Junior Developer",
+  //   company: "WebStudio",
+  //   period: "2018 — 2019",
+  //   description: "Started my professional journey building landing pages and e-commerce solutions. Learned agile methodologies and collaborative development.",
+  //   technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
+  // },
 ];
 
 export const blogPosts: BlogPost[] = [
@@ -237,9 +240,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "TypeScript", level: 95 },
       { name: "JavaScript", level: 95 },
-      { name: "Python", level: 80 },
-      { name: "Go", level: 65 },
-      { name: "Rust", level: 50 },
+      { name: "Python", level: 50 },
+      // { name: "Go", level: 65 },
+      // { name: "Rust", level: 50 },
     ],
   },
   {
@@ -256,10 +259,10 @@ export const skillCategories: SkillCategory[] = [
     title: "Tools & Platforms",
     skills: [
       { name: "Git", level: 90 },
-      { name: "Docker", level: 80 },
-      { name: "AWS", level: 75 },
+      // { name: "Docker", level: 80 },
+      // { name: "AWS", level: 75 },
       { name: "PostgreSQL", level: 85 },
-      { name: "Figma", level: 70 },
+      { name: "Figma", level: 80 },
     ],
   },
 ];
@@ -270,6 +273,6 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Blog", href: "#blog" },
-  { label: "Testimonials", href: "#testimonials" },
+  // { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];

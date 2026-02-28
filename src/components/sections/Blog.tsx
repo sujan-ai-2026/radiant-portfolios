@@ -51,7 +51,7 @@ export default function Blog() {
 
                 <div className="flex gap-2 mt-4">
                   {post.tags.map((tag) => (
-                    <span key={tag} className="px-2 py-0.5 text-xs rounded bg-muted text-accent font-mono">
+                    <span key={tag} className="px-2 py-0.5 text-xs rounded bg-primary/10 text-primary dark:text-accent font-mono">
                       {tag}
                     </span>
                   ))}

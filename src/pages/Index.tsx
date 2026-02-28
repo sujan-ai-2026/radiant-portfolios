@@ -22,7 +22,7 @@ export default function Index() {
         <Projects />
         <Experience />
         <Blog />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />

@@ -30,9 +30,8 @@ export default function Experience() {
               initial={{ opacity: 0, x: idx % 2 === 0 ? -30 : 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: idx * 0.15 + 0.3, duration: 0.6 }}
-              className={`relative pl-12 md:pl-0 mb-12 last:mb-0 md:w-1/2 ${
-                idx % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12 md:ml-auto"
-              }`}
+              className={`relative pl-12 md:pl-0 mb-12 last:mb-0 md:w-1/2 ${idx % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12 md:ml-auto"
+                }`}
             >
               {/* Dot */}
               <div className="absolute left-3 md:left-auto md:right-auto top-1.5 w-3 h-3 rounded-full bg-primary glow-sm
@@ -50,11 +49,11 @@ export default function Experience() {
               <div className="p-5 rounded-xl bg-card border border-border">
                 <span className="text-xs font-mono text-primary">{exp.period}</span>
                 <h4 className="text-lg font-display font-semibold mt-1">{exp.role}</h4>
-                <p className="text-accent text-sm">{exp.company}</p>
+                <p className="text-primary dark:text-accent text-sm">{exp.company}</p>
                 <p className="text-muted-foreground text-sm mt-2">{exp.description}</p>
                 <div className={`flex flex-wrap gap-1.5 mt-3 ${idx % 2 === 0 ? "md:justify-end" : ""}`}>
                   {exp.technologies.map((tech) => (
-                    <span key={tech} className="px-2 py-0.5 text-xs rounded bg-muted text-accent font-mono">
+                    <span key={tech} className="px-2 py-0.5 text-xs rounded bg-primary/10 text-primary dark:text-accent font-mono">
                       {tech}
                     </span>
                   ))}

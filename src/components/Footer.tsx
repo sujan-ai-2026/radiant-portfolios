@@ -4,10 +4,10 @@ import { Github, Linkedin, Twitter, Heart } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="border-t border-border py-8">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-muted-foreground flex items-center gap-1">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-end gap-4">
+        {/* <p className="text-sm text-muted-foreground flex items-center gap-1">
           Built with <Heart className="w-3.5 h-3.5 text-primary" /> by {personalInfo.name}
-        </p>
+        </p> */}
         <div className="flex items-center gap-4">
           {[
             { icon: Github, href: personalInfo.socials.github },

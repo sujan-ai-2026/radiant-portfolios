@@ -29,7 +29,7 @@ export default function Skills() {
               transition={{ delay: catIdx * 0.15, duration: 0.6 }}
               className="p-6 rounded-xl bg-card border border-border"
             >
-              <h4 className="text-lg font-display font-semibold mb-6 text-accent">{category.title}</h4>
+              <h4 className="text-lg font-display font-semibold mb-6 text-primary dark:text-accent">{category.title}</h4>
               <div className="space-y-4">
                 {category.skills.map((skill, skillIdx) => (
                   <div key={skill.name}>
