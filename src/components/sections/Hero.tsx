@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download, Github, Linkedin, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 import { personalInfo } from "@/lib/data";
 import { HeroBackground } from "@/components/HeroBackground";
 
@@ -67,14 +68,13 @@ export default function Hero() {
               View My Work
               <ArrowDown className="w-4 h-4" />
             </a>
-            <a
-              href="/cv.pdf"
-              download
+            <Link
+              to="/cv"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-border text-foreground hover:bg-secondary transition-colors"
             >
               <Download className="w-4 h-4" />
               Download CV
-            </a>
+            </Link>
           </motion.div>
 
           <motion.div

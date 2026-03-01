@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ProjectDetail from "./pages/ProjectDetail";
 import BlogPost from "./pages/BlogPost";
+import CVRedirect from "./pages/CVRedirect";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/ThemeProvider";
 
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/cv" element={<CVRedirect />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks, personalInfo } from "@/lib/data";
 import { Menu, X, Download } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
@@ -117,14 +117,13 @@ export default function Navbar() {
                   {link.label}
                 </button>
               ))}
-              <a
-                href="/cv.pdf"
-                download
+              <Link
+                to="/cv"
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-medium w-fit"
               >
                 <Download className="w-3.5 h-3.5" />
                 Download CV
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}
