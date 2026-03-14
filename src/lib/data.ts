@@ -63,7 +63,7 @@ export const personalInfo = {
   name: "Sujan Praba",
   title: "Frontend Developer",
   tagline: "I craft digital experiences that blend beautiful design with robust engineering.",
-  bio: "I'm a passionate frontend developer with 4+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
+  bio: "I'm a passionate frontend developer with 3+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
   email: "sujanpraba11@gmail.com",
   location: "Coimbatore, India",
   socials: {

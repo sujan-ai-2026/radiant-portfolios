@@ -50,7 +50,7 @@ export default function About() {
               </div>
               <div className="grid grid-cols-2 gap-3 w-full text-center">
                 {[
-                  { label: "Years Exp", value: "4+" },
+                  { label: "Years Exp", value: "3+" },
                   { label: "Projects", value: "15+" },
                 ].map((stat) => (
                   <div key={stat.label} className="p-3 rounded-lg bg-card border border-border">
