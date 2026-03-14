@@ -20,6 +20,15 @@ export interface Experience {
   technologies: string[];
 }
 
+export interface Education {
+  id: string;
+  degree: string;
+  institution: string;
+  department?: string;
+  period: string;
+  score: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -52,9 +61,9 @@ export interface SkillCategory {
 
 export const personalInfo = {
   name: "Sujan Praba",
-  title: "Full-Stack Developer",
+  title: "Frontend Developer",
   tagline: "I craft digital experiences that blend beautiful design with robust engineering.",
-  bio: "I'm a passionate full-stack developer with 4+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
+  bio: "I'm a passionate frontend developer with 4+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or hiking in the mountains.",
   email: "sujanpraba11@gmail.com",
   location: "Coimbatore, India",
   socials: {
@@ -101,6 +110,18 @@ export const projects: Project[] = [
     githubUrl: "",
     featured: true,
   },
+  {
+    id: "poker-planner",
+    title: "Poker Planner",
+    description: "Real-time collaborative estimation tool with a unique rectangular poker table UI and premium glassmorphism design.",
+    longDescription: "Poker Planner is a high-end collaborative tool designed for agile teams to estimate tasks using a classic poker deck. It features a unique rectangular table UI that visualizes participants around a central \"poker table,\" similar to a live poker room. The application uses a curated pink aesthetic with glassmorphism, blurred backdrops, and smooth animations to provide a modern, high-end feel.\n\nCore Tech Stack\n- Frontend Framework: React 18 with TypeScript for robust, type-safe development\n- Build Tooling: Vite for high-performance development and optimized builds\n- Real-time Sync: BroadcastChannel API for cross-tab state synchronization\n- Styling & UI: Glassmorphism effects with smooth animations and a custom pink palette",
+    image: "/poker_planner_preview.png",
+    tags: ["React", "TypeScript", "Vite", "BroadcastChannel API", "Glassmorphism"],
+    category: "Collaboration / Utility",
+    liveUrl: "https://sujan-ai-planing-poker.netlify.app/",
+    githubUrl: "",
+    featured: true,
+  },
 ];
 
 export const experiences: Experience[] = [
@@ -121,6 +142,31 @@ export const experiences: Experience[] = [
     period: "2023 (6 months)",
     description: "Started from scratch by learning HTML, CSS, and JavaScript, then progressed to building real-world features using React and Next.js. Contributed to frontend development, improved UI components, and gained hands-on experience working on a SaaS platform.",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Next.js"]
+  }
+];
+
+export const educations: Education[] = [
+  {
+    id: "1",
+    degree: "Bachelor of Engineering (B.E)",
+    institution: "SSM Institute of Engineering and Technology, Dindigul",
+    department: "Electronics and Communication Engineering",
+    period: "2019 - 2023",
+    score: "8.58 CGPA"
+  },
+  {
+    id: "2",
+    degree: "Higher Secondary (12th)",
+    institution: "Vidhya Parthi Higher Secondary School",
+    period: "2018 - 2019",
+    score: "481 Marks"
+  },
+  {
+    id: "3",
+    degree: "Secondary School Leaving Certificate (SSLC)",
+    institution: "Vidhya Parthi Higher Secondary School",
+    period: "2016 - 2017",
+    score: "489 Marks"
   }
 ];
 
@@ -223,7 +269,8 @@ export const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
-  { label: "Blog", href: "#blog" },
+  { label: "Education", href: "#education" },
+  // { label: "Blog", href: "#blog" },
   // { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];

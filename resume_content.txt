@@ -1,0 +1,81 @@
+Sujan Praba
+Full-Stack Developer
+📍 Coimbatore, India | ✉️ sujanpraba11@gmail.com
+
+Professional Summary
+I'm a passionate full-stack developer with 4+ years of experience building modern web applications. I specialize in React, TypeScript, and Node.js, and I love creating performant, accessible, and visually stunning digital products. I craft digital experiences that blend beautiful design with robust engineering.
+
+---
+
+Experience
+
+Full-Stack Developer
+Pirai Infotech Pvt Ltd | 2023 — Present
+- Contributing as a Full-Stack Developer across multiple production-grade platforms including E-Ticket Booking, Doctor Appointment Management, Insurance & Investment, and Job Search & Posting systems.
+- Built scalable frontend and backend features using React, Next.js, and Node.js.
+- Adopted TypeScript for type-safe development, implemented unit testing, and improved application performance and maintainability.
+- Actively worked with modern tooling and state management solutions to enhance user experience and system reliability.
+- Technologies: Next.js, React, TypeScript, Node.js, TanStack Query, Vite, AWS, Docker, Unit Testing
+
+Intern Developer
+Pirai Infotech Pvt Ltd | 2023 (6 months)
+- Started from scratch by learning HTML, CSS, and JavaScript, then progressed to building real-world features using React and Next.js.
+- Contributed to frontend development, improved UI components, and gained hands-on experience working on a SaaS platform.
+- Technologies: HTML, CSS, JavaScript, React, Next.js
+
+---
+
+Education
+
+Bachelor of Engineering (B.E), Electronics and Communication Engineering
+SSM Institute of Engineering and Technology, Dindigul
+2019 - 2023
+- Score: 8.58 CGPA
+
+Higher Secondary (12th)
+VPHSS
+2018 - 2019
+- Score: 481 Marks
+
+Secondary School Leaving Certificate (SSLC)
+Vidhya Parthi Higher Secondary School
+2016 - 2017
+- Score: 489 Marks
+
+---
+
+Technical Skills
+
+- Languages: TypeScript, JavaScript
+- Frameworks & Libraries: React, Next.js, Node.js, Express, Tailwind CSS
+- AI & Agents: Prompt Engineering, Claude & LLMs, AI Agents (Antigravity), Agentic Workflows
+- Tools & Platforms: Git, PostgreSQL, Figma
+
+---
+
+Featured Projects
+
+AI Quiz Master | Live Demo: https://sujanai-quiz-generator.netlify.app/
+Intelligent quiz generation platform that transforms any topic or job description into a high-quality, tailored assessment.
+- Leveraged advanced Language Models (LLMs) via the Groq API to dynamically create multiple-choice questions ranging from basic concepts to expert-level scenarios.
+- Designed a seamless user experience with real-time scoring, detailed performance breakdowns, and AI-generated summaries offering actionable feedback and career advice.
+- Tech Stack: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui, TanStack Query, Groq API, Zod, Lucide React
+
+Aura: Your Weather Concierge | Live Demo: https://sujanai-weather-companion.netlify.app/
+Real-time weather application with intelligent AI-powered lifestyle and activity suggestions.
+- Integrated real-time weather data with the Groq API to analyze atmospheric conditions and suggest optimal activities, clothing choices, and health tips.
+- Transformed raw meteorological data into context-aware, actionable daily insights.
+- Tech Stack: React 18, Vite, TypeScript, Groq API, Weather API, Tailwind CSS
+
+Theme Doctor | Live Demo: https://themedoctor.netlify.app/
+A real-time visual theme editor and design system manager for modern web applications.
+- Provided a live, interactive environment bridging the gap between design and implementation by allowing developers to customize brand colors, typography, and UI surface styles with instant feedback.
+- Used CSS variables and a custom React Context-based Theme System for real-time style injection seamlessly synchronizing across complex dashboards and components.
+- Featured a premium floating horizontal editor, robust preset system, and CSV export functionality for production use.
+- Tech Stack: React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, Design Systems
+
+Poker Planner | Live Demo: https://sujan-ai-planing-poker.netlify.app/
+Real-time collaborative estimation tool with a unique rectangular poker table UI and premium glassmorphism design.
+- Designed for agile teams to estimate tasks collaboratively using a classic poker deck round a visual poker table.
+- Incorporated BroadcastChannel API for high-performance, cross-tab state synchronization.
+- Tech Stack: React 18, TypeScript, Vite, BroadcastChannel API, Glassmorphism

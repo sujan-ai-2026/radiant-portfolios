@@ -77,7 +77,7 @@ export default function Hero() {
             </Link>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1 }}
@@ -99,7 +99,7 @@ export default function Hero() {
                 <Icon className="w-5 h-5" />
               </a>
             ))}
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
 

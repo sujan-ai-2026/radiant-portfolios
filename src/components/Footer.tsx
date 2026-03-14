@@ -10,13 +10,13 @@ export default function Footer() {
         </p> */}
         <div className="flex items-center gap-4">
           {[
-            { icon: Github, href: personalInfo.socials.github },
-            { icon: Linkedin, href: personalInfo.socials.linkedin },
-            { icon: Twitter, href: personalInfo.socials.twitter },
-          ].map(({ icon: Icon, href }) => (
+            { name: "Github", icon: Github, href: personalInfo.socials.github },
+            { name: "Linkedin", icon: Linkedin, href: personalInfo.socials.linkedin },
+            { name: "Twitter", icon: Twitter, href: personalInfo.socials.twitter },
+          ].map(({ name, icon: Icon, href }) => (
             <a
-              key={href}
-              href={href}
+              key={name}
+              href={href || "#"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

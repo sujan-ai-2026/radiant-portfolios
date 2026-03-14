@@ -1,8 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { personalInfo } from "@/lib/data";
-import { Send, Mail, MapPin, CheckCircle } from "lucide-react";
+import { Send, Mail, MapPin, CheckCircle, Loader2 } from "lucide-react";
 import { z } from "zod";
+import { toast } from "sonner";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -20,7 +21,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = contactSchema.safeParse(form);
     if (!result.success) {
@@ -32,14 +33,32 @@ export default function Contact() {
       setErrors(fieldErrors);
       return;
     }
+
     setErrors({});
     setLoading(true);
-    // Simulate submission
-    setTimeout(() => {
-      setLoading(false);
+
+    try {
+      const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbx_ip5HiZulMp_fCSkX1O0w0cYI5CauabCobQW3JgOneKWbya7107Ynefr11R_d7YbeqQ/exec";
+
+      // Real submission
+      await fetch(GOOGLE_SHEET_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      toast.success("Thank you! Your message has been sent.");
       setSubmitted(true);
       setForm({ name: "", email: "", message: "" });
-    }, 1000);
+    } catch (error) {
+      console.error("Submission error:", error);
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -133,10 +152,19 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity disabled:opacity-50 glow-sm"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity disabled:opacity-50 glow-sm min-w-[160px]"
                 >
-                  {loading ? "Sending..." : "Send Message"}
-                  <Send className="w-4 h-4" />
+                  {loading ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Send Message</span>
+                      <Send className="w-4 h-4" />
+                    </>
+                  )}
                 </button>
               </form>
             )}

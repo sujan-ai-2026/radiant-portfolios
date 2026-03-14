@@ -9,6 +9,7 @@ import BlogPost from "./pages/BlogPost";
 import CVRedirect from "./pages/CVRedirect";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/ThemeProvider";
+import CookieBanner from "./components/CookieBanner";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <CookieBanner />
       </TooltipProvider>
     </QueryClientProvider>
   </ThemeProvider>
